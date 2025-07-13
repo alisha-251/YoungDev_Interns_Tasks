@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio - Task 4</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background: linear-gradient(45deg, #4facfe, #00f2fe);
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: white !important;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #00f2fe, #4facfe);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      margin-top: 30px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .features i {
+      font-size: 3rem;
+      color: #0d6efd;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial {
+      background-color: #fff;
+      border-left: 5px solid #4facfe;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon bg-light rounded"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Creative & Responsive Web Design</h1>
+      <p class="lead mt-3">Modern layout using Bootstrap 5, responsive for all devices.</p>
+      <img src="https://images.unsplash.com/photo-1603574670812-d24560880210?auto=format&fit=crop&w=1200&q=80" alt="Responsive Design">
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-5" id="features">
+    <div class="container text-center">
+      <h2 class="section-title">Key Features</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <i class="bi bi-phone-fill"></i>
+          <h5 class="mt-3">Mobile First</h5>
+          <p>Designed with responsiveness in mind for seamless mobile experience.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-lightning-fill"></i>
+          <h5 class="mt-3">Fast & Lightweight</h5>
+          <p>Optimized code ensures smooth loading and performance.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="bi bi-palette-fill"></i>
+          <h5 class="mt-3">Modern UI</h5>
+          <p>Clean and aesthetic user interface with Bootstrap styling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-5 bg-light" id="projects">
+    <div class="container">
+      <h2 class="section-title text-center">My Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://source.unsplash.com/400x250/?machine-learning" class="card-img-top" alt="Linear Regression">
+            <div class="card-body">
+              <h5 class="card-title">Task 1 – Linear Regression</h5>
+              <p class="card-text">Built and trained a simple ML model using scikit-learn.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://source.unsplash.com/400x250/?data,analysis" class="card-img-top" alt="Data Analysis">
+            <div class="card-body">
+              <h5 class="card-title">Task 2 – Data Analysis</h5>
+              <p class="card-text">Explored and visualized dataset using pandas and matplotlib.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://source.unsplash.com/400x250/?ai,technology" class="card-img-top" alt="Classification">
+            <div class="card-body">
+              <h5 class="card-title">Task 3 – Classification</h5>
+              <p class="card-text">Developed a logistic regression & decision tree classifier.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5" id="testimonials">
+    <div class="container">
+      <h2 class="section-title text-center">Testimonials</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="testimonial">
+            <p>"Excellent design with clean responsive structure. Great job!"</p>
+            <strong>- Mentor, YoungDev Intern</strong>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="testimonial">
+            <p>"Highly professional layout. The responsiveness is impressive."</p>
+            <strong>- Peer Reviewer</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container">
+      <h5>Contact Me</h5>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>© 2025 MyPortfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
